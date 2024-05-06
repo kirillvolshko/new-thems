@@ -1,0 +1,51 @@
+.about {
+  margin-block: 60px 104px;
+
+  &__header {
+    margin-bottom: 45px;
+  }
+
+  &__recommend {
+    padding: 60px 162px 90px 107px;
+
+    @include borderStyles;
+  }
+
+  &__title {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 39px;
+  }
+
+  &__describe {
+    font-size: 16px;
+    margin-bottom: 87px;
+  }
+
+  &__footer {}
+
+  &__info {}
+
+  &__statistic {
+    min-height: 175px;
+
+    @include borderStyles;
+  }
+
+  &__partners {
+    padding: 70px 56px;
+
+    @include borderStyles;
+  }
+
+  &__partners-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 17px;
+  }
+
+  &__partners-text {
+    padding-block: -70px;
+    font-size: 16px;
+  }
+}

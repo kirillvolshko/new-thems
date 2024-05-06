@@ -1,0 +1,20 @@
+.header {
+  padding: 17px 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+  &__logo {
+    margin-right: 3rem;
+  }
+
+  &__nav {
+    margin-right: 5rem;
+  }
+
+  &__form {
+    width: 315px;
+  }
+
+  &__search {
+    border-radius: 53px;
+  }
+}
