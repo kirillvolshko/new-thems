@@ -46,7 +46,7 @@ class Course_List_Widget extends WP_Widget {
                 echo '<p class="font-semibold text-gray-400">Skill</p>';
                 echo'</footer>';
                 echo '</article>';
-
+                
                 echo '</div>';
             }
             echo '</div>';

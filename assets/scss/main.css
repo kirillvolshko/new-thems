@@ -13,7 +13,7 @@
 .btn-rounded {
   @apply w-14 h-14 text-center cursor-pointer bg-gray-200 bg-no-repeat bg-center border-0 rounded-full leading-none transition-all ease-in-out duration-200;
 
-  background-image: url(../img/arrow-right.svg);
+  background-image: url(./assets/img/arrow-right.svg);
   background-size: 16px 14px;
   padding: 12px;
   transition: background-position .15s cubic-bezier(.47, 0, .745, .715), background-color .2s, color .2s;

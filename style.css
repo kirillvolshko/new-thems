@@ -68,7 +68,7 @@ Prometheus
   transition-property: all;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  background-image: url(../img/arrow-right.svg);
+  background-image: url(./assets/img/arrow-right.svg);
   background-size: 16px 14px;
   padding: 12px;
   transition: background-position .15s cubic-bezier(.47, 0, .745, .715), background-color .2s, color .2s;
