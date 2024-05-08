@@ -19,18 +19,22 @@ class Main_Content_Container_Widget extends WP_Widget {
 
         // Вывод содержимого виджета
         // Код для первой колонки
-        echo '<div class="about__header row">';
-        echo '<div class="about__recommend col-md-6">';
-        echo '<h1 class="about__title">' . esc_html( $instance['title'] ) . '</h1>';
-        echo '<p class="about__describe">' . esc_html( $instance['content'] ) . '</p>';
-        echo '<button type="button" class="btn btn-dark">' . esc_html( $instance['button_text'] ) . '</button>';
-        echo '</div>'; // Закрытие текстовой колонки
+        echo '<section id="promo" class="mt-[60px] mb-[45px]">';
+        echo '<div class="container">';
+        echo '<div class="grid grid-cols-2 gap-5">';
+        echo '<div class="pr-40 borderStyles pt-14 pb-[90px] pl-[107px]">';
+        echo '<h1 class="text-[40px] mb-10 font-bold">' . esc_html( $instance['title'] ) . '</h1>';
+        echo '<p class="text-gray-300 mb-[87px]">' . esc_html( $instance['content'] ) . '</p>';
+        echo '<button type="button" class="btn">' . esc_html( $instance['button_text'] ) . '</button>';
+        echo '</div>'; 
 
-        // Код для второй колонки с изображением
-        echo '<div class="col-md-6">';
-        echo '<img class="img-fluid" src="' . esc_url( $instance['image_url'] ) . '" alt="Image">';
-        echo '</div>'; // Закрытие колонки с изображением
-        echo '</div>'; // Закрытие .main-content-container
+        
+        echo '<div class="bg-gray-300 rounded-[20px] flex content-center">';
+        echo '<img  src="' . esc_url( $instance['image_url'] ) . '" alt="Image">';
+        echo '</div>';
+        echo '</div>';
+        echo '</div>'; 
+        echo '</section>';
         echo $args['after_widget'];
     }
 

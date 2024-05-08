@@ -40,10 +40,10 @@ const colors = {
   light: "#ffffff", // color for text and icons on dark background
   gray: {
     100: "#E5E5E5", // border color
-    200: "#9A9A9A", // main text color
-    300: "#9A9A9A", // nav color
+    200: "#F9F9F9", // bg color
+    300: "#9A9A9A", // main text color
     400: "#808080", // secondary text color
-    500: "#a0aec0",
+    500: "#D9D9D9",
     600: "#718096",
     700: "#4a5568",
     800: "#2d3748",

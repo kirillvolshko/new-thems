@@ -1,18 +1,15 @@
 jQuery(document).ready(function ($) {
-    // Обработчик кликов по вкладкам
-    $('.tabs-list li').on('click', function () {
-        // Удаляем класс active у всех вкладок
-        $('.tabs-list li').removeClass('active');
-        // Добавляем класс active к текущей вкладке
-        $(this).addClass('active');
-
-        // Получаем ID текущей вкладки
-        var tabId = $(this).attr('id');
-
-        // Скрываем все блоки с контентом вкладок
-        $('[id^=tab-content]').hide();
-
-        // Показываем контент текущей вкладки
-        $('#' + tabId).siblings('.tab-content').show();
+    // Переключение между вкладками при клике на ссылку
+    $('.tabs-container .container ul li a').on('click', function (e) {
+        e.preventDefault();
+        var target = $(this).attr('href');
+        $('.tabs-container .container ul li .tab-content-container').removeClass('active');
+        $(this).parent().addClass('active');
+        $('.tabs-container .container .tab-content-container').hide();
+        $(target).show();
     });
+    // Показать первую вкладку при загрузке страницы
+    $('.tabs-container .container nav ul li:first-child').addClass('active');
+    $('.tab-content-container').hide();
+    $('.tab-content-container').first().show();
 });

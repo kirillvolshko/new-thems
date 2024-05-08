@@ -2,10 +2,35 @@
   @apply rounded-[20px] border-2 border-gray-100;
 }
 
+.btn-primary {
+  @apply px-4 py-2 border-2 border-black rounded-full bg-primary text-light hover:bg-light hover:text-primary hover:border-primary;
+}
+
 .btn {
-  @apply rounded-full border-2 border-black px-4 py-2 text-primary hover:bg-black hover:text-white;
+  @apply px-4 py-2 border-2 border-black rounded-full text-primary hover:bg-black hover:text-white;
+}
+
+.btn-rounded {
+  @apply w-14 h-14 text-center cursor-pointer bg-gray-200 bg-no-repeat bg-center border-0 rounded-full leading-none transition-all ease-in-out duration-200;
+
+  background-image: url(../img/arrow-right.svg);
+  background-size: 16px 14px;
+  padding: 12px;
+  transition: background-position .15s cubic-bezier(.47, 0, .745, .715), background-color .2s, color .2s;
+}
+
+.btn-rounded:hover {
+  @apply text-white bg-gray-300;
+  background-position: 60%;
 }
 
 .active {
-  @apply text-primary bg-gray-200 rounded-t-lg px-9;
+  @apply bg-gray-200 rounded-t-lg text-primary px-9;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

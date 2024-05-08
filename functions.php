@@ -35,6 +35,8 @@ add_theme_support( 'elementor' );
 require_once( get_template_directory() . '/widgets/class-main-content-container-widget.php' );
 require_once( get_template_directory() . '/widgets/class-counter-content-container-widget.php' );
 require_once( get_template_directory() . '/widgets/class-tabs-container-widget.php' );
+require_once( get_template_directory() . '/widgets/class-course-list-swiper-widget.php' );
+
 function my_tailwind_theme_styles() {
   wp_enqueue_style('tailwind-style', get_template_directory_uri(). './style.css', array(), '1.0');
 }
