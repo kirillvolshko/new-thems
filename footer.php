@@ -1,45 +1,42 @@
-<footer class="footer text-white " style="background-color: #292C3D;">
+<footer class="text-white bg-primary">
     <div class="container">
-      <div class="row">
-        <h5 class="card-title mb-4">Prometheus</h5>
-
-        <div class="col-md-3 mb-3" style="width: 18rem;">
-          <p class="card-text">03067, м. Київ, бул. Вацлава Гавела, 5г, к. 2</p>
-          <p class="card-text">(093) 6691691</p>
-          <a href="#" class="text-decoration-none link-light">info@prometheus.org.ua</a>
+      <h5 class="mb-8 text-3xl">Prometheus</h5>
+      <div class="grid grid-cols-4 gap-4 py-4">
+        <div>
+          <p class="mb-8">03067, м. Київ, бул. Вацлава Гавела, 5г, к. 2</p>
+          <p class="mb-8">(093) 6691691</p>
+          <a href="#" class="text-gray-300 no-underline">info@prometheus.org.ua</a>
         </div>
 
-        <div class="col-md-3 mb-3">
-          <h6>Про нас</h6>
-          <div><a href="#" class="text-decoration-none link-secondary">Про нас</a></div>
-          <div><a href="#" class="text-decoration-none link-secondary">Поширені запитання</a></div>
-          <div><a href="#" class="text-decoration-none link-secondary">Співпраця</a></div>
+        <div>
+          <h6 class="mb-8">Про нас</h6>
+          <a href="#" class="block text-gray-300 no-underline">Про нас</a>
+          <a href="#" class="block text-gray-300 no-underline">Поширені запитання</a>
+          <a href="#" class="block text-gray-300 no-underline">Співпраця</a>
         </div>
 
-        <div class="col-md-3 mb-3">
-          <h6>Prometheus</h6>
-          <div><a href="#" class="text-decoration-none link-secondary">Всі курси</a></div>
-          <div><a href="#" class="text-decoration-none link-secondary">Prometheus+</a></div>
-          <div><a href="#" class="text-decoration-none link-secondary">Корпоративне навчання</a></div>
+        <div>
+          <h6 class="mb-8">Prometheus</h6>
+          <a href="#" class="block text-gray-300 no-underline">Всі курси</a>
+          <a href="#" class="block text-gray-300 no-underline">Prometheus+</a>
+          <a href="#" class="block text-gray-300 no-underline">Корпоративне навчання</a>
         </div>
 
-        <div class="col-md-3 mb-3">
-          <h6>Застосунок</h6>
-          <div><a href="#" class="text-decoration-none link-secondary">Android</a></div>
-          <div><a href="#" class="text-decoration-none link-secondary">Apple</a></div>
+        <div>
+          <h6 class="mb-8">Застосунок</h6>
+          <a href="#" class="block text-gray-300 no-underline">Android</a>
+          <a href="#" class="block text-gray-300 no-underline">Apple</a>
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-md-12 d-flex justify-content-end">
-          <ul class="confidency nav gap-5">
-            <li><a href="#" class="text-decoration-none link-secondary">Політика конфіденційності</a></li>
-            <li><a href="#" class="text-decoration-none link-secondary">Договір публічної оферти</a></li>
-            <li><a href="#" class="text-decoration-none link-secondary">Допомога</a></li>
-          </ul>
+      <div class="flex items-center justify-end gap-5 py-4">
+        <ul class="flex gap-5">
+          <li><a href="#" class="text-gray-300 no-underline">Політика конфіденційності</a></li>
+          <li><a href="#" class="text-gray-300 no-underline">Договір публічної оферти</a></li>
+          <li><a href="#" class="text-gray-300 no-underline">Допомога</a></li>
+        </ul>
 
-          <a class="text-decoration-none link-secondary" href="#">© 2023 Prometheus</a>
-        </div>
+        <a class="text-gray-300 no-underline" href="#">© 2023 Prometheus</a>
       </div>
     </div>
   </footer>

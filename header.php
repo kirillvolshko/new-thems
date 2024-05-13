@@ -70,7 +70,7 @@
           <li class="flex justify-end space-x-2">
             <a class="btn" href="#">Увійти</a>
 
-            <a class="btnPrimary" href="#">Приєднатися</a>
+            <a class="btn-primary" href="#">Приєднатися</a>
           </li>
         </ul>
       </div>

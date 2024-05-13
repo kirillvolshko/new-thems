@@ -1,13 +1,13 @@
 <?php
-class Course_List_Widget extends WP_Widget {
+class Prometheus_Plus_Third_Container_Widget extends WP_Widget {
 
     // Конструктор
     public function __construct() {
         parent::__construct(
-            'course_list_widget', // ID вашого віджета
-            __( 'Course_List_Widget', 'text_domain' ), // Назва вашого віджета
+            'prometheus_plus_third_container_widget', // ID вашого віджета
+            __( 'Prometheus Plus Third Container Widget', 'text_domain' ), // Назва вашого віджета
             array(
-                'description' => __( 'Course_List_Widget', 'text_domain' ), // Опис вашого віджета
+                'description' => __( 'Prometheus Plus Third Container Widget', 'text_domain' ), // Опис вашого віджета
             )
         );
     }
@@ -16,15 +16,14 @@ class Course_List_Widget extends WP_Widget {
     public function widget( $args, $instance ) {
         // Вивід віджета
         echo $args['before_widget'];
-        echo '<section id="slider-popular-courses" class="mb-[104px]">';
+        echo '<section id="prometheus-plus-slider-programs" class="pb-40 bg-primary">';
         echo '<div class="container relative grid grid-cols-12">';
         // Перевірка наявності вкладок
         if (!empty($instance['cards'])) {
-            echo '<div class="flex justify-between col-span-11 mb-11">';
-            echo '<h2 class="text-4xl font-bold text-primary">'. esc_html( $instance['widget_title_cards'] ) .'</h2>';
-            echo '<a href="/" class="btn">'. esc_html( $instance['text_of_button'] ) .'</a>';
+            echo '<div class="col-span-11 mb-11">';
+            echo '<h2 class="font-bold text-center text-light text-[50px]">'. esc_html( $instance['widget_title_cards'] ) .'</h2>';
             echo '</div>';
-            echo '<div data-id="1" id="swiper1" class="w-full h-full col-span-11 swiper">';
+            echo '<div data-id="3" id="swiper3" class="w-full h-full col-span-11 swiper">';
             echo '<div class="swiper-wrapper">';
             // Вивід контенту кожної вкладки
             foreach ($instance['cards'] as $card) {
@@ -55,8 +54,12 @@ class Course_List_Widget extends WP_Widget {
            
         }
             echo '<div class="flex items-center justify-end col-start-12 col-end-13">';
-            echo '<div class="button-next-1 btn-rounded next"></div>';
+            echo '<div class="button-next-3 btn-rounded next"></div>';
             echo '</div>';
+            
+        echo '<div class="flex justify-center col-span-11 mt-24">';
+        echo '<button class="btn-light">'. esc_html( $instance['text_of_button'] ) .'</button>';
+        echo '</div>';
         echo '</div>';
         echo '</section>';
         echo $args['after_widget'];
@@ -139,12 +142,9 @@ class Course_List_Widget extends WP_Widget {
 }
 
 // Реєстрація віджета
-function register_course_list_widget() {
-    register_widget( 'Course_List_Widget' );
+function register_prometheus_plus_third_container_widget() {
+    register_widget( 'Prometheus_Plus_Third_Container_Widget' );
 }
-add_action( 'widgets_init', 'register_course_list_widget' );
-function add_custom_slider_script() {
-    wp_enqueue_script( 'custom-slider-script', get_template_directory_uri() . '/assets/js/main.js', array( 'jquery' ), '1.0', true );
-}
-add_action( 'wp_enqueue_scripts', 'add_custom_slider_script' );
+add_action( 'widgets_init', 'register_prometheus_plus_third_container_widget' );
+
 

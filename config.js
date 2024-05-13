@@ -43,7 +43,7 @@ const colors = {
     200: "#F9F9F9", // bg color
     300: "#9A9A9A", // main text color
     400: "#808080", // secondary text color
-    500: "#D9D9D9",
+    500: "#878B8F",
     600: "#718096",
     700: "#4a5568",
     800: "#2d3748",
